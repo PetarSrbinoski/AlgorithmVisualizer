@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+    <h1>Algorithm Visualizer</h1>
+    <p class="subtitle">Sorting & Pathfinding — minimal colors, maximum clarity</p>
+</header>
+
+<main class="container">
+    <section class="control-bar">
+        <label class="select-wrap">
+            <span>Algorithm</span>
+            <select id="algorithm">
+                <optgroup label="Sorting">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="merge">Merge Sort</option>
+                </optgroup>
+                <optgroup label="Traversal / Pathfinding">
+                    <option value="bfs">BFS</option>
+                    <option value="dfs">DFS</option>
+                    <option value="dijkstra">Dijkstra</option>
+                    <option value="astar">A*</option>
+                </optgroup>
+            </select>
+        </label>
+
+        <div class="speed-wrap">
+            <label for="speed">Speed</label>
+            <input id="speed" type="range" min="1" max="100" value="50" />
+            <span id="speedVal">50</span>
+        </div>
+
+        <div class="btn-row">
+            <button id="startBtn" class="btn primary">Start</button>
+            <button id="stopBtn" class="btn danger">Stop</button>
+        </div>
+    </section>
+
+    <section class="viz-and-notes">
+        <canvas id="canvas" width="960" height="480"></canvas>
+
+        <aside class="explain">
+            <h2>Explanation</h2>
+            <p id="algoDesc">Bubble Sort repeatedly compares adjacent items and swaps them when out of order.</p>
+            <ul id="log"></ul>
+        </aside>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>Made by Petar Srbinoski</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
