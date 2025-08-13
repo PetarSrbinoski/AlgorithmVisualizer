@@ -10,8 +10,8 @@ html,body{ height:100%; }
 body{
     margin:0;
     font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    background:var(--black);
-    color:var(--white);
+    background:honeydew;
+    color:var(--black);
 }
 
 .site-header{
@@ -29,18 +29,18 @@ body{
 
 .control-bar{
     display:flex; gap:16px; flex-wrap:wrap; align-items:center;
-    background:#0b0b0b;
-    border:1px solid rgba(255,255,255,.12);
+    background:var(--white);
+    border:1px solid rgba(0,0,0,.42);
     border-radius:14px;
     padding:12px 14px;
-    box-shadow:0 6px 24px rgba(220,20,60,.12);
+    box-shadow:0 6px 24px lightgray;
 }
 
 .select-wrap{
     display:flex; flex-direction:column; gap:6px;
 }
 .select-wrap select{
-    background:var(--black); color:var(--white);
+    background:var(--white); color:var(--black);
     border:1px solid var(--crimson); border-radius:10px;
     padding:8px 12px; min-width:220px;
 }
@@ -65,7 +65,7 @@ body{
 .btn:hover{ transform:translateY(1px); }
 .btn.primary{ border-color:var(--crimson); background:var(--crimson); }
 .btn.primary:hover{ filter:brightness(1.05); }
-.btn.danger{ border-color:var(--white); }
+.btn.danger{ border-color:var(--white); background: darkgray }
 .btn.danger:hover{ background:#111; }
 
 .viz-and-notes{
@@ -78,13 +78,13 @@ body{
 
 #canvas{
     width:100%; height:auto; background:var(--white);
-    border-radius:14px; border:1px solid rgba(0,0,0,.2);
-    box-shadow:0 10px 30px rgba(220,20,60,.15);
+    border-radius:14px; border:1px solid rgba(0,0,0,.42);
+    box-shadow:0 10px 30px lightgray;
 }
 
 .explain{
-    background:#0b0b0b;
-    border:1px solid rgba(255,255,255,.12);
+    background:var(--white);;
+    border:1px solid rgba(0,0,0,.42);
     border-radius:14px;
     padding:16px;
 }
